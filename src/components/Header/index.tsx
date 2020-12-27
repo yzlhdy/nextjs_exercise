@@ -1,12 +1,15 @@
-import { Box, Flex, useColorMode, Icon } from '@chakra-ui/react';
+import { Box, Flex, useColorMode, Icon, useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 import { SunIcon, MoonIcon, WarningIcon } from '@chakra-ui/icons'
 
 const Header: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode()
+  const bg = useColorModeValue("blue.500", "green.500")
+
+
   return (
-    <Box bg="pink.200" w="100%" h="10">
-      <Box maxWidth="3xl" margin="auto" w="100%" h="100%">
+    <Box bg={bg} w="100%" h="10">
+      <Box maxWidth="1200px" margin="auto" w="100%" h="100%">
         <Flex justifyContent="space-between" h="100%" alignItems="center">
           <Box>
             123

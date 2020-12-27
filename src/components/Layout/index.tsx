@@ -6,7 +6,7 @@ const Layout: React.FC = ({ children }) => {
   return (
     <>
       <Header />
-      <Box maxW="3xl" margin="auto">
+      <Box maxW="1200px" margin="auto" bg="purple.400">
         {children}
       </Box>
     </>
