@@ -8,7 +8,7 @@ interface IProps {
 const CardItem: React.FC<IProps> = ({ Lists }) => {
     return (
         <Box >
-            <Grid templateColumns="repeat(3, 1fr)" gap={3}>
+            <Grid templateColumns={{ md: 'repeat(2, 1fr)', xl: 'repeat(4, 1fr)', lg: 'repeat(3, 1fr)', sm: 'repeat(1, 1fr)' }} gap={3} >
                 {
                     Lists.map((item: any, index: number) => (
                         <Box w="100" height="200" borderRadius="20px" boxShadow="xl" key={index} bg="green.300" p="20px" m="20px">
