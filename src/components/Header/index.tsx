@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       <Box maxWidth="1200px" margin="auto" w="100%" h="100%">
         <Flex justifyContent="space-between" h="100%" alignItems="center">
           <Box>
-            123
+            一只灵活的羊
           </Box>
           <Box onClick={toggleColorMode}>
             {colorMode === "dark" ? <MoonIcon /> : <SunIcon />}
